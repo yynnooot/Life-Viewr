@@ -19,3 +19,12 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+.organism-container{
+  display: flex;
+}
+.organism-left{
+  width: 30%
+}
+.organism-right{
+  width: 70%
+}
