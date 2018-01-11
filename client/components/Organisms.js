@@ -19,10 +19,13 @@ export default class Organisms extends Component {
     render(){
         return (
             <div>
+              <div id="organisms-header">
                 <h1>ALL ORGANISMS COMPONENT</h1>
-                <div>
-                    <button><Link to={`/addform`}>Add Organism</Link></button>
-                </div>
+          
+                <button id="organism-add-btn"><Link to={`/addform`}>Add Organism</Link></button>
+                
+              </div>
+                
                 <div>
                     {
                         this.state.organisms.map(organism=>{

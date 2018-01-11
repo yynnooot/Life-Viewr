@@ -19,6 +19,9 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+#organisms-header{
+  display: flex;
+}
 .organism-container{
   display: flex;
 }

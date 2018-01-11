@@ -2,6 +2,8 @@
 
 Open Hiring Day Challenge at Cedrus
 
+Created with Fullstack Academy Boilermaker
+
 
 ## Setup
 
