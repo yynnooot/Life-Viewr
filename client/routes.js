@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Route, Switch, Router} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import history from './history'
-import {Main, Login, Signup, UserHome} from './components'
+import {Main, Login, Signup, UserHome, Organisms, SingleOrganism, AddForm} from './components'
 import {me} from './store'
 
 /**
@@ -29,6 +29,9 @@ class Routes extends Component {
                 <Switch>
                   {/* Routes placed here are only available after logging in */}
                   <Route path="/home" component={UserHome} />
+                  <Route exact path="/organisms" component={Organisms} />
+                  <Route path="/organisms/:id" component={SingleOrganism} />
+                  <Route path="/addform" component={AddForm} />
                 </Switch>
             }
             {/* Displays our Login component as a fallback */}

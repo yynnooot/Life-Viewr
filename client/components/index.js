@@ -5,4 +5,7 @@
  */
 export {default as Main} from './main'
 export {default as UserHome} from './user-home'
+export {default as Organisms} from './Organisms'
+export {default as SingleOrganism} from './SingleOrganism'
+export {default as AddForm} from './AddForm'
 export {Login, Signup} from './auth-form'
