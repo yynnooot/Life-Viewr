@@ -11,16 +11,20 @@ export default class SingleOrganism extends Component {
     }
 
     componentDidMount(){
-        axios.get('/api/organisms/:id')
+        const id = this.props.match.params.id
+        axios.get(`/api/organisms/${id}`)
             .then(res => res.data)
-            .then(organism => this.setState({organism}))
+            .then(organism => {
+              console.log(organism)
+              this.setState({organism})
+            })
     }
     
     render(){
         return (
             <div>
               <h1>SINGLE ORGANISM COMPONENT</h1>
-                {this.state.organism}
+                
             </div>
         )
     }

@@ -33,7 +33,7 @@ export default class Organisms extends Component {
                                     
 
                                           <div className="organism-left">
-                                            <img src={organism.image} alt=""/>
+                                            <img className="organism-image" src={organism.image} alt=""/>
                                           </div>
                                           <div className="organism-right">
                                             <h1>Species - {organism.species}</h1>

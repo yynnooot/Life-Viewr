@@ -28,8 +28,8 @@ class Routes extends Component {
               isLoggedIn &&
                 <Switch>
                   {/* Routes placed here are only available after logging in */}
-                  <Route path="/home" component={UserHome} />
-                  <Route exact path="/organisms" component={Organisms} />
+                  {/* <Route path="/home" component={UserHome} /> */}
+                  <Route exact path="/home" component={Organisms} />
                   <Route path="/organisms/:id" component={SingleOrganism} />
                   <Route path="/addform" component={AddForm} />
                 </Switch>

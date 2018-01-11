@@ -25,6 +25,9 @@ form div {
 .organism-left{
   width: 30%
 }
+.organism-image{
+  width: 100%;
+}
 .organism-right{
   width: 70%
 }
